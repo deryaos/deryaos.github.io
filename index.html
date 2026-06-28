@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeryaOS — a from-scratch x86 operating system</title>
+<meta name="description" content="DeryaOS is an independent x86 operating system built from scratch — its own bootloader, dual 32/64-bit kernels, native GUI desktop, networking and filesystems. Currently in private beta.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="logo">Derya<span>OS</span></div>
+    <p class="tag">An independent x86 operating system, built from scratch.</p>
+    <p class="sub">Its own bootloader. Two kernels (32-bit &amp; 64-bit). A native GUI desktop, a networking stack, multiple filesystems, and over-the-air updates — no Linux, no BSD, no borrowed kernel underneath.</p>
+    <p class="status"><span class="dot"></span> Active development &middot; currently in <strong>private beta</strong></p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="shots">
+    <figure>
+      <img src="assets/desktop-x64.png" alt="DeryaOS 64-bit desktop with windows" loading="lazy">
+      <figcaption>The DeryaOS desktop (64-bit) — windowed apps, taskbar, system tray.</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/desktop-x32.png" alt="DeryaOS 32-bit desktop" loading="lazy">
+      <figcaption>The same desktop on the 32-bit kernel — one unified codebase, two architectures.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>What it is</h2>
+    <p>DeryaOS is written from the ground up: the boot chain, the kernels, the drivers, the GUI, the network protocols and the filesystems are all original code. The exact same source builds and runs on both 32-bit and 64-bit x86, so a fix lands on both at once.</p>
+  </section>
+
+  <section>
+    <h2>Highlights</h2>
+    <div class="grid">
+      <div class="card"><h3>Native desktop</h3><p>A real windowed GUI — draggable, resizable windows, a taskbar and start menu, with built-in apps: a text editor, file manager, web viewer, system tools and a few games.</p></div>
+      <div class="card"><h3>Dual architecture</h3><p>One codebase, 32-bit and 64-bit kernels, with preemptive multitasking on both.</p></div>
+      <div class="card"><h3>Networking</h3><p>An original TCP/IP stack — ARP, IPv4, ICMP, UDP, TCP, DNS and HTTP — driving real network cards.</p></div>
+      <div class="card"><h3>Filesystems</h3><p>Read/write FAT16, FAT32, exFAT and the native DeryaFS; read support for NTFS and ISO 9660.</p></div>
+      <div class="card"><h3>Over-the-air updates</h3><p>The system updates itself in the background and verifies every component cryptographically before applying it, with automatic rollback if a new build misbehaves.</p></div>
+      <div class="card"><h3>Its own installer</h3><p>Boots from USB or CD, partitions a disk, and installs — boot manager included.</p></div>
+    </div>
+  </section>
+
+  <section class="beta">
+    <h2>Beta program</h2>
+    <p>DeryaOS is being tested on real hardware and in virtual machines. We are looking for a small group of <strong>beta testers</strong> who can run it, push it, and report what they find — what works, what breaks, what feels wrong. Findings are reviewed together and turned into fixes.</p>
+    <p>It is early software: expect rough edges, and don't run it on a machine whose data you can't afford to lose. If that sounds like your kind of fun, get in touch.</p>
+    <p class="cta"><a href="mailto:ibrahim.boul@gmail.com?subject=DeryaOS%20beta%20tester">Ask about joining the beta &rarr;</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>DeryaOS &middot; an independent operating-system project.</p>
+    <p class="fine">This site shares general information only. Beta builds and update details are provided privately to testers.</p>
+  </div>
+</footer>
+</body>
+</html>
